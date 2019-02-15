@@ -7,6 +7,6 @@ attr_accessor :name
     @@all << self
   end
   def self.all
-    @@all.each {|patient| patient}
+    @@all.each {|patient| patient.name}
   end
 end
