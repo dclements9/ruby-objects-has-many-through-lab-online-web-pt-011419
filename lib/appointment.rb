@@ -9,6 +9,6 @@ class Appointment
     @@all << self
   end
   def self.all
-    @@all
+    @@all.each {|appointment| appointment}
   end
 end
