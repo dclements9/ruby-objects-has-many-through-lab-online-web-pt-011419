@@ -10,8 +10,9 @@ attr_accessor :name
     @@all.each {|patient| patient.name}
   end
   def new_appointment(doctor,date)
-    Appointment.new = (self, doctor, date)
+    Appointment.new(self, doctor, date)
   end
+  
   def appointments
     Appointment.all.select{|appointment| appointment.patient == self}
   end
